@@ -1,0 +1,90 @@
+.header {
+  height: 130px; }
+
+.header-sub {
+  height: 50px;
+  background-color: #434a54;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.header-sub-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 1150px;
+  background-color: #4a515b; }
+
+.header-information {
+  display: flex;
+  margin-top: 16px; }
+
+.header-options {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 200;
+  letter-spacing: 2px; }
+
+.header-term {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 300;
+  letter-spacing: 2px; }
+
+.header-place {
+  color: #fff;
+  font-size: 13px;
+  margin: 0 8px;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 1px; }
+
+.header-user {
+  display: flex; }
+
+.header-booking {
+  margin: 16px 10px 0; }
+
+.header-mail {
+  margin: 16px 10px 0; }
+
+.header-review {
+  margin: 16px 20px 0; }
+
+.header-account {
+  margin: 8px 20px 0;
+  display: flex; }
+
+.header-account-avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 8px; }
+
+.header-account-user {
+  display: flex;
+  flex-direction: column; }
+
+.header-account-name {
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 4px;
+  text-decoration: none;
+  letter-spacing: .5px; }
+
+.header-account-status {
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+  letter-spacing: .5px; }
+
+.header-solid-color {
+  height: 3px;
+  width: 100%;
+  float: left;
+  background: linear-gradient(to right, #f76570 0%, #f76570 8%, #f3a46b 8%, #f3a46b 16%, #f3a46b 16%, #ffd205 16%, #ffd205 24%, #ffd205 24%, #1bbc9b 24%, #1bbc9b 25%, #1bbc9b 32%, #14b9d5 32%, #14b9d5 40%, #c377e4 40%, #c377e4 48%, #f76570 48%, #f76570 56%, #f3a46b 56%, #f3a46b 64%, #ffd205 64%, #ffd205 72%, #1bbc9b 72%, #1bbc9b 80%, #14b9d5 80%, #14b9d5 80%, #14b9d5 89%, #c377e4 89%, #c377e4 100%); }
