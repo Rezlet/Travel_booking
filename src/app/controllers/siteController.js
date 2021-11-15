@@ -1,7 +1,9 @@
 
+const Package = require('../model/Package.js')
 class siteController {
     // [GET] '/'
     index (req, res,next) {
+       
         res.render('home');
     }
 }

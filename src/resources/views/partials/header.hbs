@@ -1,6 +1,6 @@
 <div class="header">
     <div class="header-sub">
-        <div class="header-sub-container">
+        <div class="header-sub-container container">
             <div class="header-information">
                     <a href="#" class="header-options">
                         <span class="ti-credit-card"></span>
@@ -18,11 +18,37 @@
                 <div class="header-user">
                     <div class="header-booking">My Bookings</div>
                     <div class="header-mail">
+                        <span class="header-mail-notice">3</span>
                         <span class="ti-email"></span>
-                        
+                        <div class="header-mail-show">
+                            <div class="header-show-content">
+                                <img src="/images/package-newdelhi-150x150.jpg" alt="" class="header-show-img">
+                                <div href="" class="header-show-main">
+                                    <a href="" class="header-main-content">Best Travel Plugin</a>
+                                    <a href="" class="header-main-detail">CHECK FEATURES</a>
+                                </div>
+
+                            </div>
+                            <div class="header-show-content">
+                                <img src="/images/package-london-150x150.jpg" alt="" class="header-show-img">
+                                <div href="" class="header-show-main">
+                                    <a href="" class="header-main-content">Multi Purpose</a>
+                                    <a href="" class="header-main-detail">Multi Purpose</a>
+                                </div>
+
+                            </div>
+                            <div class="header-show-content">
+                                <img src="/images/package-rome-150x150.jpg" alt="" class="header-show-img">
+                                <div href="" class="header-show-main">
+                                    <a href="" class="header-main-content">Multi Purpose</a>
+                                    <a href="" class="header-main-detail">VERY EASY TO USE</a>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="header-review">Add Your Review</div>
+                    <a href="./package/create" class="header-review">Add Your Package</a>
                     <div class="header-account">
                         <img class="header-account-avatar" src="/images/anh-gai.jpg" alt="">
                         <div class="header-account-user">
@@ -38,6 +64,118 @@
        <div class="header-solid-color"></div>
    
    <div class="header-main">
-       
+       <div class="header-main-container container">
+           <div class="">
+                <img class="header-main-img" src="/images/logo.png" alt="">
+           </div>
+           
+            <span class="ti-menu header-main-icon js-btn-menu"></span>
+           <div class="disable-mob header-main-content-menu js-content-menu">
+               <span class="ti-close header-main-close-item js-btn-close"></span>
+               <div class="header-content-container">
+                   <a href="/" class="header-content-main">HOME</a>
+               </div>
+
+                <div class="header-content-container">
+                   <a href="./packages" class="header-content-main">PACKAGES</a>
+                    <div class="header-content-detail">
+                        <a href="./search" class="header-content-word">SEARCH</a>
+                        <a href="./packages/single" class="header-content-word">SINGLE PACKAGES</a>
+                        <a href="./destination" class="header-content-word">DESTINATION</a>
+                    </div>
+               </div>
+                <div class="header-content-container">
+                   <a href="./shop" class="header-content-main">SHOP</a>
+                    <div class="header-content-detail">
+                        <a href="./shop" class="header-content-word">SHOP</a>
+                        <a href="" class="header-content-word">CART</a>
+                        <a href="" class="header-content-word">CHECKOUT</a>
+                        <a href="" class="header-content-word">My ACCOUNT</a>
+                    </div>
+               </div>
+                <div class="header-content-container">
+                   <a href="" class="header-content-main">ABOUT US</a>
+               </div>
+                <div class="header-content-container">
+                   <a href="" class="header-content-main">PAGES</a>
+                     <div class="header-content-detail">
+                        <a href="" class="header-content-word">BEST DESTINATION</a>
+                        <a href="" class="header-content-word">STAFF</a>
+                        <a href="" class="header-content-word">SERVICES</a>
+                        <a href="" class="header-content-word">PRICES</a>
+                         <a href="" class="header-content-word">FQA</a>
+                        <a href="" class="header-content-word">
+                            CONTACT 1
+                            <span class="ti-arrow-circle-right "></span>
+                            <span class="header-content-more">
+                                <span class="header-more-detail">Contact 1</span>
+                                <span class="header-more-detail">Contact 2</span>
+                            </span>
+                            
+                            </a>
+                        <a href="" class="header-content-word">COMING SOON</a>
+                    </div>
+               </div>
+
+                <div class="header-content-container">
+                   <a href="" class="header-content-main">NEWS</a>
+                   <div class="header-content-detail">
+                        <a href="" class="header-content-word">Archive</a>
+                        <a href="" class="header-content-word">
+                            Single Post
+
+                             <span class="ti-arrow-circle-right "></span>
+                            <span class="header-content-more">
+                                <span class="header-more-detail">Full Width</span>
+                                <span class="header-more-detail">Right Sidebar</span>
+                                <span class="header-more-detail">Left Sidebar</span>
+                            </span>
+                        </a>
+                    </div>
+               </div>
+
+                <div class="header-content-container">
+                   <a href="" class="header-content-main">CONTACT</a>
+                    <div class="header-content-detail">
+                        <a href="" class="header-content-word">Contact 1</a>
+                        <a href="" class="header-content-word">Contact 2</a>
+                    </div>
+               </div>
+
+                <div class="header-content-container">
+                   <span class="header-content-booking">BOOK NOW</span>
+               </div>
+               
+           </div>
+       </div>
    </div>
 </div>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const mainContent=document.querySelector('.js-content-menu')
+        const btnOpenMenu = document.querySelector('.js-btn-menu')
+        const btnCloseMenu = document.querySelector('.js-btn-close')
+        function showMenu() {
+            mainContent.classList.remove('disable-mob')
+        }
+
+        function hideMenu() {
+            mainContent.classList.add('disable-mob')
+        }
+        function btnMenu() {
+              if(document.querySelector('.js-content-menu').classList.contains('disable-mob')){
+                  mainContent.classList.remove('disable-mob')
+              }else{
+                   mainContent.classList.add('disable-mob')
+              }
+        }
+        
+        btnOpenMenu.addEventListener('click',btnMenu)
+
+        btnCloseMenu.addEventListener('click',hideMenu)
+
+    })
+
+    
+</script>

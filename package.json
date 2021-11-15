@@ -10,7 +10,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "mongoose": "^6.0.12"
+  },
   "devDependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.3.4",

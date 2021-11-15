@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1150px;
+    flex-wrap: wrap;
+}   
+
+.available-icon{
+    opacity: .8;
+}
+
+.mt-4{
+    width: calc(100% / 3);
+    margin: 0 auto;
+} 
+.mt-6{
+    width: 45%;
+    margin: 0 16px;
+}
+
+.mt-8{
+    width: calc(100% * 2/3);
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .mb-12{
+        width: 100%;
+        margin: 15px;
+    }
+}
+
+.disable{
+    display: none;
+}
