@@ -47,6 +47,7 @@
                 <span class="body-content-title ">
                     Select your destination
                 </span>
+
                 <div class="body-content-container">
                      <select name="choice-destination" id="destination" class="body-content-box">
                         <option value="" class="body-box-option">All Destination</option>
@@ -109,6 +110,11 @@
                     </div>
 
                </div>
+            <div class="body-range-container">
+                <label for="customRange1" class="body-range-label"> Max Price : <span class="js-price">5000$</span></label>
+                <input type="range" class="body-content-range" id="customRange1" min="0" max="10000" value="5000">
+            </div>
+               
 
             <div class="body-content-choice">
                  <div class="body-content-title">
@@ -260,3 +266,11 @@
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
   ></script>
+
+  <script>
+      const range = document.querySelector('.body-content-range')
+      const output = document.querySelector('.js-price')
+      range.oninput = function() {
+        output.innerHTML = this.value + '$';
+    }
+  </script>

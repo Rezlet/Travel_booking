@@ -1,11 +1,92 @@
-<div style="background-image: url(/images/p-17.jpg); " class="main-content-main">
-          <span class="home-text-destination">ITALY</span>
-          <span class="home-text-quality">BEST <span class="home-small-quality">TOURS</span></span>
-          <div class="home-text-place">
-              <span class="home-small-place">CITY</span> 
-              <span class="home-big-place">TOUR</span></div>
-            <span class="home-text-price">
-              2400
-               <span class="home-icon-price">$</span>
-            </span>
+<div  class="main-container-head">
+  {{!-- travel 1 --}}
+  <div  class="main-content-main">
+  <img src="/images/parallax-2.jpg" alt="" class="main-header-img">
+  <div style="position: relative;" class=" container">
+    <div style="
+    width: 1150px;
+    position: absolute;
+    top: 150px;
+    left: 500px;" 
+    class="main-container-text">
+              <div class="main-destination-container">
+                <span class="main-header-destination">PARIS</span>
+
+              </div>
+                <div class="main-header-quality">
+                  <span class="main-big-quality">TOUR</span>
+                  <span class="main-small-quality">EIFFEL</span>
+                </div>
+                <div class="main-header-place">
+                    <span class="main-small-place">CITY</span>
+                    <span class="main-big-place">TOUR</span>
+                </div>
+                <span class="main-header-price">
+                    <div  class="main-sale-animation">
+                      <span style="background-color: rgb(243, 164, 107);" class="main-header-sale">SALE</span>
+                    </div>
+                    <div class="main-price-animation">
+                      1500
+                    </div>
+                    <span class="main-header-icon">$</span>
+                  </span>
+        </div>
+      </div>
+  </div>
+
+  {{!-- travel 2 --}}
+  <div  class="main-content-main">
+  <img src="/images/p-17.jpg" alt="" class="main-header-img ">
+  <div style="position: relative;" class=" container">
+    <div class="main-container-text">
+              <div class="main-destination-container">
+                <span class="main-header-destination">ITALY</span>
+
+              </div>
+                <div class="main-header-quality">
+                  <span class="main-big-quality">BEST</span>
+                  <span class="main-small-quality">TOURS</span>
+                </div>
+                <div class="main-header-place">
+                    <span class="main-small-place">CITY</span>
+                    <span class="main-big-place">TOUR</span>
+                </div>
+                <span class="main-header-price">
+                    <div class="main-sale-animation">
+                      <span class="main-header-sale">SALE</span>
+                    </div>
+                    <div class="main-price-animation">
+                      2.400
+                    </div>
+                    <span class="main-header-icon">$</span>
+                  </span>
+        </div>
+      </div>
+  </div>
+     
+
 </div>
+ 
+
+
+
+ <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+     document.querySelector(".slick-next").innerHTML = '<span class ="slick-my-icon"> <i class="ti-angle-right"></i> </span>';
+     document.querySelector(".slick-prev").innerHTML = '<span class ="slick-my-icon"> <i class="ti-angle-left"></i> </span>';
+
+  })
+</script>
