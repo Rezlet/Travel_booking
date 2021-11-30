@@ -9,9 +9,16 @@
     opacity: .8;
 }
 
+.mt-3{
+    width: calc(100% / 4);
+    margin: 0 auto;
+    padding: 0 5px;
+} 
+
 .mt-4{
     width: calc(100% / 3);
     margin: 0 auto;
+    padding: 0 5px;
 } 
 .mt-6{
     width: 45%;
@@ -23,7 +30,27 @@
     margin: 0 auto;
 }
 
+.mt-9{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.mt-10{
+    width: 83.333%;
+    margin: 0 auto;
+}
+
 @media (max-width: 1200px) {
+    .mb-9{
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    .mb-10{
+        width: 83.333%;
+        margin: 0 auto;
+    }
+
     .mb-12{
         width: 100%;
         margin: 15px;

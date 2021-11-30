@@ -1,0 +1,37 @@
+@media (max-width: 1200px) {
+  .main-container-head {
+    margin-bottom: 248px; }
+  .main-input-container {
+    max-width: 900px; }
+  .main-form-control,
+  .main-form-select,
+  .main-btn-label {
+    width: 95%; }
+  .main-label-container {
+    display: block; }
+  .main-continent-img {
+    height: 1050px; }
+  .main-continent {
+    margin: 15px auto; }
+  .main-footer-information {
+    height: 640px;
+    top: 102px; }
+  .main-information-details {
+    margin-top: 36px; } }
+
+@media (max-width: 800px) and (min-width: 1200px) {
+  .main-header-destination {
+    font-size: 32px; }
+  .main-header-quality {
+    font-size: 48px; }
+  .main-small-place {
+    font-size: 12px; }
+  .main-small-place {
+    font-size: 12px; }
+  .main-header-price {
+    font-size: 24px; }
+  .main-header-sale {
+    padding: 3px 5px;
+    font-size: 8px; }
+  .main-header-icon {
+    font-size: 15px; } }

@@ -26,6 +26,17 @@ $(document).ready(function(){
         rows: 1,
     })
 
-  
+    $('.main-footer-list').slick({
+        arrows: false,
+        infinite:false,
+        dots: false,
+        speed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        rows: 3,
+        fade: true,
+        cssEase: 'linear'
+    });
+// //   
   });
 

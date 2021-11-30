@@ -1,72 +1,324 @@
-<div  class="main-container-head">
-  {{!-- travel 1 --}}
-  <div  class="main-content-main">
-  <img src="/images/parallax-2.jpg" alt="" class="main-header-img">
-  <div style="position: relative;" class=" container">
-    <div style="
-    width: 1150px;
-    position: absolute;
-    top: 150px;
-    left: 500px;" 
-    class="main-container-text">
-              <div class="main-destination-container">
-                <span class="main-header-destination">PARIS</span>
 
-              </div>
-                <div class="main-header-quality">
-                  <span class="main-big-quality">TOUR</span>
-                  <span class="main-small-quality">EIFFEL</span>
+<div style="position: relative;" class="">
+
+{{!-- container to contain travel --}}
+  <div  class="main-container-head">
+    {{!-- travel 1 --}}
+    <div  class="main-content-main">
+    <img src="/images/parallax-2.jpg" alt="" class="main-header-img">
+    <div style="position: relative;" class=" container">
+      <div style="
+      width: 1150px;
+      position: absolute;
+      top: 150px;
+      left: 50%;" 
+      class="main-container-text">
+                <div class="main-destination-container">
+                  <span class="main-header-destination">PARIS</span>
+
                 </div>
-                <div class="main-header-place">
-                    <span class="main-small-place">CITY</span>
-                    <span class="main-big-place">TOUR</span>
-                </div>
-                <span class="main-header-price">
-                    <div  class="main-sale-animation">
-                      <span style="background-color: rgb(243, 164, 107);" class="main-header-sale">SALE</span>
-                    </div>
-                    <div class="main-price-animation">
-                      1500
-                    </div>
-                    <span class="main-header-icon">$</span>
-                  </span>
+                  <div class="main-header-quality">
+                    <span class="main-big-quality">TOUR</span>
+                    <span class="main-small-quality">EIFFEL</span>
+                  </div>
+                  <div class="main-header-place">
+                      <span class="main-small-place">CITY</span>
+                      <span class="main-big-place">TOUR</span>
+                  </div>
+                  <span class="main-header-price">
+                      <div  class="main-sale-animation">
+                        <span style="background-color: rgb(243, 164, 107);" class="main-header-sale">SALE</span>
+                      </div>
+                      <div class="main-price-animation">
+                        1500
+                      </div>
+                      <span class="main-header-icon">$</span>
+                    </span>
+          </div>
         </div>
-      </div>
+    </div>
+
+    {{!-- travel 2 --}}
+    <div  class="main-content-main">
+    <img src="/images/p-17.jpg" alt="" class="main-header-img ">
+    <div style="position: relative;" class=" container">
+      <div class="main-container-text">
+                <div class="main-destination-container">
+                  <span class="main-header-destination">ITALY</span>
+
+                </div>
+                  <div class="main-header-quality">
+                    <span class="main-big-quality">BEST</span>
+                    <span class="main-small-quality">TOURS</span>
+                  </div>
+                  <div class="main-header-place">
+                      <span class="main-small-place">CITY</span>
+                      <span class="main-big-place">TOUR</span>
+                  </div>
+                  <span class="main-header-price">
+                      <div class="main-sale-animation">
+                        <span class="main-header-sale">SALE</span>
+                      </div>
+                      <div class="main-price-animation">
+                        2.400
+                      </div>
+                      <span class="main-header-icon">$</span>
+                    </span>
+          </div>
+        </div>
+    </div>
   </div>
 
-  {{!-- travel 2 --}}
-  <div  class="main-content-main">
-  <img src="/images/p-17.jpg" alt="" class="main-header-img ">
-  <div style="position: relative;" class=" container">
-    <div class="main-container-text">
-              <div class="main-destination-container">
-                <span class="main-header-destination">ITALY</span>
+  <div style="position:relative;" class="container">
 
-              </div>
-                <div class="main-header-quality">
-                  <span class="main-big-quality">BEST</span>
-                  <span class="main-small-quality">TOURS</span>
-                </div>
-                <div class="main-header-place">
-                    <span class="main-small-place">CITY</span>
-                    <span class="main-big-place">TOUR</span>
-                </div>
-                <span class="main-header-price">
-                    <div class="main-sale-animation">
-                      <span class="main-header-sale">SALE</span>
-                    </div>
-                    <div class="main-price-animation">
-                      2.400
-                    </div>
-                    <span class="main-header-icon">$</span>
-                  </span>
-        </div>
-      </div>
   </div>
-     
+    
+
+    <div class="main-input-container">
+          <div class="main-input-information">
+            <div class="main-input-search">
+              <span class="main-input-icon ti-search"></span>
+              QUICK SEARCH
+            </div>
+            <div class="main-input-advanced">
+              <span class="main-input-icon ti-layout-menu-v"></span>
+              ADVANCED
+            </div>
+          </div>
+          
+          <div class="main-label-container">
+              <input type="email" class="main-form-control" id="exampleFormControlInput1" placeholder="insert keyword">
+              
+            <select class="main-form-select" aria-label="Default select example">
+              <option selected>All Destination</option>
+              <option value="europe">Europe</option>
+              <option value="england"> - England</option>
+              <option value="italy"> - Italy</option>
+              <option value="asia">Asia</option>
+              <option value="america">America</option>
+              <option value="africa">Africa</option>
+              <option value="oceania">Oceania</option>
+            </select>
+
+            <select class="main-form-select" aria-label="Default select example">
+              <option selected>All Typologies</option>
+              <option value="relax">Relax</option>
+              <option value="cultural">Cultural</option>
+              <option value="sport">Sport</option>
+              <option value="history">History</option>
+            </select>
+
+            <button type="submit" class="main-btn-label">SEARCH</button>
+          </div>
+
+    </div>
+</div>
+
+<div class="main-tour-container">
+    <div class="main-tour-head">
+      <span class="main-head-big">TOP PROMOTIONS</span>
+      <span class="main-head-small">BEST TRAVEL PACKAGES AVAILABLE</span>
+      <span class="main-head-bar"></span>
+    </div>
+
+    
+     <div class="body-container-list  mt-12 container mb-12">
+        {{#each packages }}
+            <div style="padding: 0 15px; margin: 15px auto;" class="mt-4 body-container-tour mb-12">
+                <div style="background-image: url({{image}});" class="body-choice-img">
+                    <span class="body-choice-price">{{price}}$</span>
+                </div>
+
+                <div class="body-choice-destination">
+                    {{destination}}
+                </div>
+
+                <div style="background-color: #{{color}};" class="body-choice-feature">
+                    <a href="./Europe" class="body-choice-continent">{{continent}}</a>
+                    <a href="./Cultural" class="body-choice-aim">{{aim}}</a>
+                </div>
+                <div style="padding: 20px;" class="">
+                <div class="body-choice-content">{{comment}}</div>
+                <a href="./abc" class="body-choice-btn">DETAILS</a>
+
+                </div>
+            </div>
+            
+            {{/each}}
+
+             
+        </div>  
+        <div class="main-container-more">
+          <a href="" class="main-more-big" >ALL PACKAGES</a>
+          <a href="" class="main-more-small" >PROMOTIONS</a>
+        </div>
+
+        <div class="main-middle">
+          <div  class="main-middle-image" 
+          style="background-image: 
+          url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/parallax-1.jpg)">
+          </div>
+
+          
+              <div class="main-middle-information">
+                <div class="main-middle-head">SUMMER PROMOTION</div>
+                  <div class="main-middle-content">
+                    SANTORINI - GREEK ISLAND TOUR
+                  </div>
+                  <div class="main-middle-detail">
+                    1000 $ for person - 6 nights
+                  </div>
+                  <div class="main-button-container">
+                      <a href="#" class="main-middle-button">MORE DETAILS</a>
+
+                  </div>
+              </div>
+           
+        </div>
+</div>
+
+<div class="main-tour-head">
+      <span class="main-head-big">OUR DESTINATIONS</span>
+      <span class="main-head-small">CHOOSE YOUR NEXT DESTINATION</span>
+      <span class="main-head-bar"></span>
+
 
 </div>
+
+<div class="main-continents-container container mt-12">
+  <a href="#" class="main-continent mt-3 mb-9">
+    <img src="/images/continent-1.jpg" alt="" class="main-continent-img">
+    <div class="main-continent-place">OCEANIA</div>
+  </a>
+
+  <a href="#" class="main-continent mt-3 mb-9">
+    <img src="/images/continent-2.jpg" alt="" class="main-continent-img">
+    <div class="main-continent-place">AFRICA</div>
+  </a>
  
+  <a href="#" class="main-continent mt-3 mb-9">
+    <img src="/images/continent-3.jpg" alt="" class="main-continent-img">
+    <div class="main-continent-place">AMERICA</div>
+  </a>
+
+  <a href="#" class="main-continent mt-3 mb-9">
+    <img src="/images/continent-4.jpg" alt="" class="main-continent-img">
+    <div class="main-continent-place">ASIA</div>
+  </a>
+</div>
+
+
+<div class="main-footer-information">
+  <div class="main-information-container container">
+    <div class="main-information-details mt-3 mb-12">
+        <span class="main-information-number">75</span>
+        <div class="main-information">
+            <span style="background-color: #ffd205;" class="main-information-item">
+            DESTINATIONS
+          </span>
+        </div>
+      </div>
+
+      <div class="main-information-details mt-3 mb-12">
+        <span class="main-information-number">149</span>
+        <div class="main-information">
+            <span style="background-color:#1bbc9b ;" class="main-information-item">
+            TOURS PACK
+          </span>
+        </div>
+        
+      </div>
+
+      <div class="main-information-details mt-3 mb-12">
+        <span class="main-information-number">32</span>
+         <div class="main-information">
+            <span style="background-color: #14b9d5;" class="main-information-item">
+            CRUISES
+          </span>
+        </div>
+      </div>
+
+      <div class="main-information-details mt-3 mb-12">
+        <span class="main-information-number">24</span>
+        <div class="main-information">
+            <span style="background-color:#f76570 ;" class="main-information-item">
+            HOUR SUPPORT
+          </span>
+        </div>
+      </div>
+  </div>
+ 
+</div>
+
+
+<div class="main-tour-head">
+      <span class="main-head-big">PACKAGES</span>
+      <span class="main-head-small">BEST TRAVEL PACKAGES
+</span>
+      <span class="main-head-bar"></span>
+
+
+</div>
+
+<div class="main-footer ">
+  <div class="main-footer-container container mt-12">
+    <div class="main-footer-contact mt-3 mb-12">
+          <div class="main-footer-input">
+            <div class="main-input-search">
+              REQUEST
+            </div>
+            <div class="main-input-advanced">
+              <span class="main-input-icon ti-world"></span>
+              CONTACT
+            </div>
+          </div>
+
+          
+            <div class="main-footer-label">
+                <input style="margin: 20px 0 ;" type="text" class="main-form-control" id="exampleFormControlInput1" placeholder="Name">
+                <input style="margin: 20px 0 ;" type="email" class="main-form-control" id="exampleFormControlInput1" placeholder="Email">
+                <input style="margin: 20px 0 ;" type="text" class="main-form-control" id="exampleFormControlInput1" placeholder="Guests">
+
+                <select style="margin: 20px 0 ;" class="main-form-select" aria-label="Default select example">
+                  <option selected>Select Destination</option>
+                  <option >- London</option>
+                  <option >- Rome</option>
+                  <option >- New Delhi</option>
+                  <option >- Dubai</option>
+                </select>
+                  <textarea class="main-form-textarea" name="" id="" cols="30" rows="10" placeholder="Messages"></textarea>
+
+                  <button type="submit" class="main-footer-btn">SEND NOW</button>
+
+          </div>
+    </div>
+
+    <div class="main-footer-list mt-9 mb-12">
+
+              {{#each packages }}
+
+      <div class="main-footer-item">
+        <div style="background-image: url({{image}});" class="main-item-img"></div>
+
+        <div class="main-item-content">
+          <div class="main-item-header">{{destination}}</div>
+          <div class="main-item-text">{{comment}} </div>
+        </div>
+
+        <div style="background-color: #{{color}};" class="main-item-price">
+            <div class="main-price-number">{{price}} $</div>
+              <a href="#" class="main-price-detail">DETAILS</a>
+        </div>
+      </div>
+
+      {{/each}}
+
+
+    </div>
+  </div>
+</div>
+
+
 
 
 
@@ -83,10 +335,41 @@
     src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
   ></script>
 
-<script>
+  <script>
   document.addEventListener('DOMContentLoaded', function() {
+      const content = $('.main-content-main')
+      const arrow = $('.slick-arrow')
+      const nextArrow = $('.slick-next')
+      const prevArrow = $('slick-prev')
+      {{!-- icon for slick arrow --}}
      document.querySelector(".slick-next").innerHTML = '<span class ="slick-my-icon"> <i class="ti-angle-right"></i> </span>';
      document.querySelector(".slick-prev").innerHTML = '<span class ="slick-my-icon"> <i class="ti-angle-left"></i> </span>';
+      
+      {{!-- fade on text container --}}
+      arrow.click(() => {
+        for(let i = 0; i < content.length; i++){
+            const active = $('.slick-active')
+            document.querySelector('.slick-active').style.display = "none"
+            setTimeout(function() {
+              document.querySelector('.slick-active').style.display = "block"
+            }, 10)
+          }
 
-  })
+        })
+
+      nextArrow.click(() => {
+      const arrImageMainArrow = ['/images/parallax-2.jpg','/images/p-17.jpg']
+      const currentIndexActive = $('.slick-active').attr('data-slick-index')
+
+
+        {{!-- nextArrow.css('--urlImageNextArr', nextImage) --}}
+
+       $('.slick-next').css('--main', '#FF6651');
+      })
+
+{{!-- callParallax --}}
+
+
+})
+    
 </script>
