@@ -3,15 +3,8 @@ const { multipleMongooseToObject} = require('../../util/mongoose')
 class packagesController {
 
     
-    create (req,res, next ) {
-        Package.find({})
-        .then(packages => res.render("create", {
-            packages:  multipleMongooseToObject(packages),
-        }))
-        .catch(error => next(error))
-    }
-    // [GET] '/search'
-    
+
+    // [GET] /package
     index (req, res,next) {
         Package.find({}) 
         .then(packages => res.render("search", { 
@@ -20,6 +13,26 @@ class packagesController {
         .catch(error => next(error))
     }
 
+    // [GET] /package/create
+    create (req,res, next ) {
+        Package.find({})
+        .then(packages => res.render("create", {
+            packages:  multipleMongooseToObject(packages),
+        }))
+        .catch(error => next(error))
+    }
+
+    // [POST] /package/store
+    store(req,res, next ) {
+        const formData = req.body
+        const packages = new Package(formData);
+        packages
+            .save()
+            .then(res.redirect(`/search`))
+            .catch(error => {
+
+            })
+    }
 }
 
 module.exports = new packagesController()

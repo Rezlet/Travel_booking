@@ -1,2 +1,82 @@
-<h1>12321</h1>
-ád
+<div style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/04/p-16.jpg); " class="main-content">
+        <div class="main-content-container">
+          <span class="main-content-text">CREATE</span>
+
+        </div>
+    </div>
+    
+
+    <div class="item-head mt-12 container">
+            Create your packages
+    </div>
+    <form method="POST" action="/package/store" class="create-label-container container">
+                <label for="destination">Destination</label>
+            <div class="create-label-item mt-12">
+                <input type="text" class="create-label-input" id="destination" name="destination">
+            </div>
+
+            <div class="create-label-item mt-12">
+                <div style="margin: 0 !important;" class="mt-6">
+                    <label for="continent" class="create-label-head">Continent</label>
+                    <select class="create-label-select" id="continent" name="continent"> 
+                        <option selected>Choice your continent</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Europe">Europe</option>
+                        <option value="NA">North America</option>
+                        <option value="SA">	South America</option>
+                        <option value="Oceania">Oceania</option>
+                        <option value="Antarctica">Antarctica</option>
+                        
+                    </select>
+                </div>
+
+                 <div style="margin: 0 !important;" class=" mt-6">
+                    <label for="aim" class="create-label-head">Aim</label>
+                    <select class="create-label-select" id="aim" name="aim" >
+                        <option selected>Choice your aim</option>
+                        <option value="Cultural">Cultural</option>
+                        <option value="History">History</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Sport">Sport</option>
+                        <option value="relax">relax</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="comment" style="margin-top: 20px; display: block;" class="create-label-head">Comment</label>
+            <div class="mt-12">
+                <textarea class="create-label-control" cols="4" rows="4" id="comment" name="comment"></textarea>
+            </div>
+
+            <label for="image" style="margin-top: 20px; display: block;" class="create-label-head">Image   
+                <div style="color: rgb(207, 107, 107);">
+                     Copy your link images here
+                </div>
+            </label>
+            <div class="create-label-item mt-12">
+                <input type="text" class="create-label-input" aria-label="City" id="image" name="image">
+            </div>
+
+            <div  class="create-label-item mt-12">
+                <div style="margin: 0 !important; " class="mt-6">
+                 <label for="color" class="create-label-head">
+                     Color 
+                     <div style="color: rgb(207, 107, 107);" class="">
+                         (copy form <a href="https://html-color.codes/">https://html-color.codes/</a> only number HEX)
+                     </div>
+                </label>
+                    <input type="text" class="create-label-input" aria-label="City"  id="color" name="color">
+                </div>
+
+                <div  style="margin: 0 !important; " class="mt-6">
+                   <label for="price" class="create-label-head">Price</label>
+                   <div style="height: 20px;"></div>
+                    <input type="text" class="create-label-input" aria-label="City" id="price" name="price">
+                </div>
+            </div>
+
+              <div class="create-label-item mt-12">
+                <button type="submit" class="create-label-submit">CREATE NEW PACKAGES</button>
+            </div>
+    </form>

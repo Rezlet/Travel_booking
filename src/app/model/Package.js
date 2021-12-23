@@ -1,4 +1,7 @@
 const mongoose = require('mongoose');
+var slug = require('mongoose-slug-generator');
+mongoose.plugin(slug);
+
 const Schema = mongoose.Schema;
 const Package = new Schema({
    destination: { type: String },
@@ -7,7 +10,8 @@ const Package = new Schema({
    comment: { type: String },
    price: {type: Number},
    image: {type: String},
-   color: {type: String}
+   color: {type: String},
+   slug: {type: String, slug: "destination", unique: true},
   },  {
     timestamps: true
 },);

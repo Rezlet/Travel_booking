@@ -33,7 +33,7 @@
   width: 83.333%;
   margin: 0 auto; }
 
-@media (max-width: 1200px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   .mb-9 {
     width: 75%;
     margin: 0 auto; }
@@ -44,5 +44,31 @@
     width: 100%;
     margin: 15px; } }
 
+@media (max-width: 799px) {
+  html {
+    overflow-x: hidden; }
+  body {
+    overflow-x: hidden; }
+  .m-12 {
+    width: 100%;
+    margin: 0 auto; }
+  .m-10 {
+    width: 83.333%;
+    margin: 0 auto; }
+  .m-9 {
+    width: 75%;
+    margin: 0 auto; }
+  .m-6 {
+    width: 50%;
+    margin: 0 auto; }
+  .m-w-100 {
+    width: 100% !important; } }
+
 .disable {
   display: none; }
+
+.active-option {
+  background-color: #5CC08A; }
+
+.not-active-option {
+  background-color: #f76570; }

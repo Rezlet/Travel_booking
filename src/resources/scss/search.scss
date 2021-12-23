@@ -76,7 +76,7 @@
     margin-left: 10px;
 }
 
-.active-option{
+.active{
     color: #fff;
 } 
 
@@ -339,6 +339,12 @@
     color: #a4a4a4;
     letter-spacing: 1px;
     min-height:140px ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
 }
 
 .body-choice-btn{

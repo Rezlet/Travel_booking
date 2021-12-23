@@ -7,12 +7,7 @@
     <div  class="main-content-main">
     <img src="/images/parallax-2.jpg" alt="" class="main-header-img">
     <div style="position: relative;" class=" container">
-      <div style="
-      width: 1150px;
-      position: absolute;
-      top: 150px;
-      left: 50%;" 
-      class="main-container-text">
+      <div class="main-container-text">
                 <div class="main-destination-container">
                   <span class="main-header-destination">PARIS</span>
 
@@ -42,7 +37,7 @@
     <div  class="main-content-main">
     <img src="/images/p-17.jpg" alt="" class="main-header-img ">
     <div style="position: relative;" class=" container">
-      <div class="main-container-text">
+      <div class="main-container-text-2">
                 <div class="main-destination-container">
                   <span class="main-header-destination">ITALY</span>
 
@@ -124,10 +119,12 @@
     
      <div class="body-container-list  mt-12 container mb-12">
         {{#each packages }}
-            <div style="padding: 0 15px; margin: 15px auto;" class="mt-4 body-container-tour mb-12">
+            <div style="padding: 0 15px; margin: 15px auto;" class="mt-4 body-container-tour mb-12 m-9">
+              <a href="/search/{{slug}}">
                 <div style="background-image: url({{image}});" class="body-choice-img">
                     <span class="body-choice-price">{{price}}$</span>
                 </div>
+              </a>
 
                 <div class="body-choice-destination">
                     {{destination}}
@@ -139,7 +136,7 @@
                 </div>
                 <div style="padding: 20px;" class="">
                 <div class="body-choice-content">{{comment}}</div>
-                <a href="./abc" class="body-choice-btn">DETAILS</a>
+                <a href="/search/{{slug}}" class="body-choice-btn">DETAILS</a>
 
                 </div>
             </div>
@@ -186,22 +183,22 @@
 </div>
 
 <div class="main-continents-container container mt-12">
-  <a href="#" class="main-continent mt-3 mb-9">
+  <a href="#" class="main-continent mt-3 mb-9 m-10">
     <img src="/images/continent-1.jpg" alt="" class="main-continent-img">
     <div class="main-continent-place">OCEANIA</div>
   </a>
 
-  <a href="#" class="main-continent mt-3 mb-9">
+  <a href="#" class="main-continent mt-3 mb-9 m-10">
     <img src="/images/continent-2.jpg" alt="" class="main-continent-img">
     <div class="main-continent-place">AFRICA</div>
   </a>
  
-  <a href="#" class="main-continent mt-3 mb-9">
+  <a href="#" class="main-continent mt-3 mb-9 m-10">
     <img src="/images/continent-3.jpg" alt="" class="main-continent-img">
     <div class="main-continent-place">AMERICA</div>
   </a>
 
-  <a href="#" class="main-continent mt-3 mb-9">
+  <a href="#" class="main-continent mt-3 mb-9 m-10">
     <img src="/images/continent-4.jpg" alt="" class="main-continent-img">
     <div class="main-continent-place">ASIA</div>
   </a>
@@ -262,7 +259,7 @@
 
 <div class="main-footer ">
   <div class="main-footer-container container mt-12">
-    <div class="main-footer-contact mt-3 mb-12">
+    <div class="main-footer-contact mt-3 mb-12 m-10">
           <div class="main-footer-input">
             <div class="main-input-search">
               REQUEST
@@ -275,11 +272,11 @@
 
           
             <div class="main-footer-label">
-                <input style="margin: 20px 0 ;" type="text" class="main-form-control" id="exampleFormControlInput1" placeholder="Name">
-                <input style="margin: 20px 0 ;" type="email" class="main-form-control" id="exampleFormControlInput1" placeholder="Email">
-                <input style="margin: 20px 0 ;" type="text" class="main-form-control" id="exampleFormControlInput1" placeholder="Guests">
+                <input style="margin: 20px 0 ;" type="text" class="main-form-control m-w-100" id="exampleFormControlInput1" placeholder="Name">
+                <input style="margin: 20px 0 ;" type="email" class="main-form-control m-w-100" id="exampleFormControlInput1" placeholder="Email">
+                <input style="margin: 20px 0 ;" type="text" class="main-form-control m-w-100" id="exampleFormControlInput1" placeholder="Guests">
 
-                <select style="margin: 20px 0 ;" class="main-form-select" aria-label="Default select example">
+                <select style="margin: 20px 0 ;" class="main-form-select m-w-100" aria-label="Default select example">
                   <option selected>Select Destination</option>
                   <option >- London</option>
                   <option >- Rome</option>
@@ -293,22 +290,22 @@
           </div>
     </div>
 
-    <div class="main-footer-list mt-9 mb-12">
+    <div class="main-footer-list mt-9 mb-12 m-10">
 
               {{#each packages }}
 
       <div class="main-footer-item">
-        <div style="background-image: url({{image}});" class="main-item-img"></div>
+          <a href="/search/{{slug}}" style="background-image: url({{image}});" class="main-item-img"></a>
 
         <div class="main-item-content">
           <div class="main-item-header">{{destination}}</div>
           <div class="main-item-text">{{comment}} </div>
         </div>
 
-        <div style="background-color: #{{color}};" class="main-item-price">
+        <a href="/search/{{slug}}" style="background-color: #{{color}};" class="main-item-price">
             <div class="main-price-number">{{price}} $</div>
-              <a href="#" class="main-price-detail">DETAILS</a>
-        </div>
+              <div  class="main-price-detail">DETAILS</div>
+        </a>
       </div>
 
       {{/each}}
