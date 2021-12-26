@@ -71,4 +71,4 @@
   background-color: #5CC08A; }
 
 .not-active-option {
-  background-color: #f76570; }
+  background-color: #f76570 !important; }

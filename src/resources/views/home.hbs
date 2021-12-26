@@ -120,25 +120,28 @@
      <div class="body-container-list  mt-12 container mb-12">
         {{#each packages }}
             <div style="padding: 0 15px; margin: 15px auto;" class="mt-4 body-container-tour mb-12 m-9">
-              <a href="/search/{{slug}}">
-                <div style="background-image: url({{image}});" class="body-choice-img">
-                    <span class="body-choice-price">{{price}}$</span>
-                </div>
-              </a>
+              <div style="border: 1px solid #f1f1f1;">
+                    <a href="/search/{{this.slug}}">
+                    <div style="background-image: url({{image}});" class="body-choice-img">
+                        <span class="body-choice-price">{{price}}$</span>
+                    </div>
+                    
+                    </a>
 
-                <div class="body-choice-destination">
-                    {{destination}}
-                </div>
+                    <div class="body-choice-destination">
+                        {{destination}}
+                    </div>
 
-                <div style="background-color: #{{color}};" class="body-choice-feature">
-                    <a href="./Europe" class="body-choice-continent">{{continent}}</a>
-                    <a href="./Cultural" class="body-choice-aim">{{aim}}</a>
-                </div>
-                <div style="padding: 20px;" class="">
-                <div class="body-choice-content">{{comment}}</div>
-                <a href="/search/{{slug}}" class="body-choice-btn">DETAILS</a>
+                    <div style="background-color: #{{color}};" class="body-choice-feature">
+                        <a href="./Europe" class="body-choice-continent">{{continent}}</a>
+                        <a href="./Cultural" class="body-choice-aim">{{aim}}</a>
+                    </div>
+                    <div style="padding: 20px; " class="body-choice-content-container">
+                        <div class="body-choice-content">{{comment}}</div>
+                        <a href="/search/{{this.slug}}" class="body-choice-btn">DETAILS</a>
 
-                </div>
+                    </div>
+              </div>
             </div>
             
             {{/each}}

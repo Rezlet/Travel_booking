@@ -6,8 +6,9 @@ $(document).ready(function(){
         rows: 2,
         draggable: false,
         responsive: [
+
             {
-              breakpoint: 799,
+              breakpoint: 1200,
               settings: {
                 slidesToShow: 1,
                 rows: 3,

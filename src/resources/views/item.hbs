@@ -1,29 +1,29 @@
 <div class="item-header">
        <div  class="main-middle-image" 
           style="background-image: 
-          url({{packages.image}})">
-            <span class="item-header-text">{{packages.destination}}</span>
+          url({{item.image}})">
+            <span class="item-header-text">{{item.destination}}</span>
         </div>
 
         <div class=" item-feature container">
           <div  class="item-feature-content">
-              <span style="background-color: #{{packages.color}};" class="item-feature-icon ti-location-pin"></span>
+              <span style="background-color: #{{item.color}};" class="item-feature-icon ti-location-pin"></span>
             <div class="item-feature-text">
-              <div class="item-feature-header">{{packages.continent}}</div>
-              <div class="item-feature-sub">{{packages.comment}}</div>
+              <div class="item-feature-header">{{item.continent}}</div>
+              <div class="item-feature-sub">{{item.comment}}</div>
             </div>
         </div>
 
         <div class="item-feature-content">
-              <span style="background-color: #{{packages.color}};" class="item-feature-icon ti-location-pin"></span>
+              <span style="background-color: #{{item.color}};" class="item-feature-icon ti-location-pin"></span>
             <div class="item-feature-text">
-              <div class="item-feature-header">{{packages.aim}}</div>
+              <div class="item-feature-header">{{item.aim}}</div>
               <div class="item-feature-sub">Lorem ipsum dolor sit amet, consec dolor sit amet anis po.</div>
             </div>
         </div>
 
-         <div style="background-color: #{{packages.color}};" class="item-feature-price">
-                {{packages.price}} <span class="item-price-icon">$</span>
+         <div style="background-color: #{{item.color}};" class="item-feature-price">
+                {{item.price}} <span class="item-price-icon">$</span>
             </div>
         </div>
 </div>
@@ -244,66 +244,30 @@
   </div>
 
   <div class="item-footer-container  mt-12 container mb-12 js-item-footer">
-      <div style="padding: 0 15px; margin: 15px auto;" class="mt-4 body-container-tour mb-12">
-           <div style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-berlin.jpg);" class="body-choice-img">
-            <span class="body-choice-price">700 $</span>
+    {{#each packages}}
+    <div style="padding: 0 15px; margin: 15px auto;" class="mt-4 body-container-tour mb-12">
+        <div style="border: 1px solid #f1f1f1;">
+          
+           <div style="background-image: url({{image}});" class="body-choice-img">
+            <span class="body-choice-price">{{price}} $ <span>
       </div>
 
           <div class="body-choice-destination">
-              Berlin
+              {{destination}}
           </div>
 
-          <div style="background-color: #BA71DA;" class="body-choice-feature">
-               <a href="./Europe" class="body-choice-continent">Europe</a>
-              <a href="./Cultural" class="body-choice-aim">Cultural</a>
-          </div>
-            <div style="padding: 20px;" class="">
-          <div class="body-choice-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum, magnam perferendis sapiente animi ab, numquam accusamus eos deserunt pariatur repellendus voluptas quisquam, commodi doloremque nihil nulla aliquam facere quos?</div>
-          <a href="/search/berlin" class="body-choice-btn">DETAILS</a>
-
-           </div>
-      </div>
-
-      <div style="padding: 0 15px; margin: 15px auto;" class="mt-4 body-container-tour mb-12">
-           <div style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-newdelhi.jpg);" class="body-choice-img">
-            <span class="body-choice-price">500 $</span>
-      </div>
-
-          <div class="body-choice-destination">
-              New Delhi
-          </div>
-
-          <div style="background-color: #14B9D5;" class="body-choice-feature">
-               <a href="./Europe" class="body-choice-continent">Asia</a>
-              <a href="./Cultural" class="body-choice-aim">History</a>
+          <div style="background-color: #{{color}};" class="body-choice-feature">
+               <a href="./Europe" class="body-choice-continent">{{continent}}</a>
+              <a href="./Cultural" class="body-choice-aim">{{aim}}</a>
           </div>
             <div style="padding: 20px;" class="">
-          <div class="body-choice-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</div>
-          <a href="/search/new-delhi" class="body-choice-btn">DETAILS</a>
+          <div class="body-choice-content">{{comment}}</div>
+          <a href="/search/{{slug}}" class="body-choice-btn">DETAILS</a>
 
-           </div>
+        </div>
       </div>
-
-      <div style="padding: 0 15px; margin: 15px auto;" class="mt-4 body-container-tour mb-12">
-           <div style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-london.jpg);" class="body-choice-img">
-            <span class="body-choice-price">400 $ <span>
-      </div>
-
-          <div class="body-choice-destination">
-              London
-          </div>
-
-          <div style="background-color: #F76570;" class="body-choice-feature">
-               <a href="./Europe" class="body-choice-continent">England</a>
-              <a href="./Cultural" class="body-choice-aim">Sport</a>
-          </div>
-            <div style="padding: 20px;" class="">
-          <div class="body-choice-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</div>
-          <a href="/search/london" class="body-choice-btn">DETAILS</a>
-
-           </div>
-      </div>
-            
+    </div>
+  {{/each}}
 
              
   </div>  

@@ -121,7 +121,8 @@
     flex-direction: column; }
   .main-footer-item {
     flex-direction: column;
-    height: 400px; }
+    height: 400px;
+    padding-bottom: 15px; }
   .main-item-content {
     width: 100%; }
   .main-item-price {

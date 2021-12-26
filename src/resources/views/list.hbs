@@ -1,0 +1,113 @@
+<div style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/04/p-5.jpg); " class="main-content">
+    <div class="main-content-container">
+        <span class="main-content-text">CREATE</span>
+    </div>
+</div>
+
+    <div style="display: flex; justify-content: space-between;" class="item-head mt-12 container">
+            List your packages 
+            <a href="/package/trash" class="item-link"> Trash ({{deletedCount}})</a>
+    </div>
+<div class="container">
+    <table class="list-table">
+        <thead class="list-table-head">
+            <tr>
+                <th  class="list-col" scope="col">#</th>
+                <th class="list-col" scope="col">Destination</th>
+                <th class="list-col" scope="col">Continent</th>
+                <th class="list-col" scope="col">Aim</th>
+                <th class="list-col" scope="col">Price</th>
+                <th class="list-col" scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+                {{#each packages}}
+            <tr>
+                    <th class="list-table-row" scope="row">{{sum @index 1}}</th>
+                    <td class="list-row" >{{destination}}</td>
+                    <td class="list-row">{{continent}}</td>
+                    <td class="list-row">{{aim}}</td>
+                    <td class="list-row">{{price}}</td>
+                    <td class="list-row">
+                        <a class="list-link" href="/package/{{_id}}/edit">Edit</a>
+                        <a class="list-link js-btn-del js-take-id" href="#" data-id="{{_id}}">Delete </a>
+                    </td>
+
+            </tr>
+
+            {{else}}
+                <td class="list-row" colspan="5">
+                    No packages have been deleted <a style="color: blue;" href="/package/create">List your packages</a>
+                </td>
+                {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<div class="modal-confirm-del disable">
+    <div class="modal-del" tabindex="-1">
+        <div class="modal-dialog-del">
+            <div class="modal-content-del">
+                <div class="modal-header-del">
+                    <h5 class="modal-title-del">Are you sure</h5>
+                    <button type="button" class="btn-close ti-close js-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body-del">
+                    <p>This packages will be delete in your list</p>
+                </div>
+                <div class="modal-footer-del">
+                    <button type="button" class=" modal-footer-btn btn btn-secondary js-close" data-bs-dismiss="modal">No</button>
+                    <button id="js-accept-delete" type="button" class="modal-footer-btn btn btn-primary not-active-option">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-confirm-del-after js-close"></div>
+</div>
+{{!-- delete from --}}
+    <form method="POST" name="delete-form"></form>
+
+ <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+ 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const btnOpenConfirmDelete = document.querySelectorAll(".js-btn-del")
+      const btnCloses = document.querySelectorAll(".js-close")
+      const allModal = $(".modal-confirm-del")
+      const buttons =  $(".js-take-id")
+      const btnDeletePackage = document.getElementById('js-accept-delete')
+      const deleteForm = document.forms['delete-form']
+      var packageId ;
+
+      function clickModal(btn){
+          btn.addEventListener("click",() => {
+            allModal.toggleClass("disable")
+          })
+      }
+
+      function takeId (btn){
+          btn.addEventListener("click", () => {
+            packageId = btn.getAttribute('data-id')
+          })
+      }
+
+      btnDeletePackage.addEventListener('click', function() {
+          deleteForm.action = '/package/' + packageId + '?_method=DELETE'
+          deleteForm.submit();
+      })
+
+
+      btnCloses.forEach(clickModal)
+      btnOpenConfirmDelete.forEach(clickModal)
+      btnOpenConfirmDelete.forEach(takeId)
+      
+})
+</script>

@@ -13,11 +13,20 @@ class searchController {
 
 
     item(req, res, next) {
-        Package.findOne({ slug: req.params.slug })
-        .then(packages => res.render("item", { 
-            packages: mongooseToObject(packages),
-        }))
-        .catch(error => next(error))
+        Promise.all([Package.find(), Package.findOne({ slug: req.params.slug })])
+            .then(([packages, item]) => res.render('item', {
+                packages: multipleMongooseToObject(packages),
+                item: mongooseToObject(item),
+                }),
+            )
+            .catch(next);
+
+
+        // Package.findOne({ slug: req.params.slug })
+        // .then(packages => res.render("item", { 
+        //     packages: mongooseToObject(packages),
+        // }))
+        // .catch(error => next(error))
     }
 }
 

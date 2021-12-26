@@ -24,7 +24,8 @@
   width: 80px;
   height: 4px;
   bottom: -24px;
-  right: 15px;
+  right: 50%;
+  transform: translateX(50%);
   background-color: #fff;
   border-radius: 2px; }
 
@@ -218,7 +219,6 @@
   position: relative; }
 
 .body-container-tour {
-  border: 1px solid #f1f1f1;
   margin: 0 15px 30px; }
 
 .body-choice-price {

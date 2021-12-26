@@ -71,6 +71,9 @@
   line-clamp: 2;
   -webkit-box-orient: vertical; }
 
+.item-link {
+  color: #5e6d81; }
+
 .item-feature-price {
   background-color: #ba71da;
   width: 30%;
