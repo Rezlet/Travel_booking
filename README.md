@@ -1,5 +1,6 @@
 # Travel_booking
 This is my first website after i learn NODEJS. 
+It need data form mongoDB. have a picture of it at 
 It have some function like :
   - CRUD
   - soft delete
